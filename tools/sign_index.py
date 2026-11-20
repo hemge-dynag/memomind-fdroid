@@ -6,6 +6,11 @@ Usage: sign_index.py <repo_dir> <keystore.jks> <storepass> [json_name] [jar_name
 Ecrit repo_dir/<jar_name> a partir de repo_dir/<json_name>.
 Par defaut: json_name=index-v1.json, jar_name=index-v1.jar.
 Le bloc PKCS#7 est construit a la main avec `cryptography` (RSA/SHA-256).
+
+ATTENTION depot v2 : F-Droid attend une entree nommee `entry.json` dans
+`entry.jar` (EntryVerifier.DATA_FILE_NAME), PAS `index-v2.json` — sinon le
+client affiche « No entry for entry.json ». Le jar est re-verifie avec
+`jarsigner -verify` (JDK 17 sur le PC Dynag) avant publication.
 """
 import base64
 import hashlib
