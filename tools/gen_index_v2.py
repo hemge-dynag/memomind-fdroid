@@ -35,7 +35,7 @@ APPS = {
         ],
     },
     "com.dynag.memoonly": {
-        "name": "MemoOnly",
+        "name": "MemOnly",
         "summary": "Cardio + music on MemoMind glasses",
         "license": "Proprietary",
         "categories": ["Health & Fitness", "Multimedia"],
@@ -114,8 +114,8 @@ def main(repo: pathlib.Path) -> int:
         "repo": {
             "name": {"en": "MemoMind", "fr": "MemoMind"},
             "description": {
-                "en": "MemoMind F-Droid repository (native APKs: Cardio, MemoOnly).",
-                "fr": "Depot F-Droid MemoMind (apps APK natives : Cardio, MemoOnly).",
+                "en": "MemoMind F-Droid repository (native APKs: Cardio, MemOnly).",
+                "fr": "Depot F-Droid MemoMind (apps APK natives : Cardio, MemOnly).",
             },
             "address": REPO_ADDRESS,
             "timestamp": ts,
