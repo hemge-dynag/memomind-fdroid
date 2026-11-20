@@ -23,6 +23,7 @@ Empreinte de signature du dépôt (SHA-256) :
 ## Applications
 
 - **MemoMind Cardio** (`com.dynag.cardio`) — Cardio BPM sur les lunettes MemoMind.
+- **MemoMind Music** (`com.dynag.music`) — Musique en cours (titre, artiste, pochette, progression) sur les lunettes MemoMind.
 
 ## Détails techniques
 

@@ -33,6 +33,24 @@ APPS = {
             ("1.2.17", 20, "memomind-cardio-1.2.17.apk", 26, 34,
              "f08b0a25bf0d06ee17b7bd39d03349aa531d6ae49fa61bac6a63b99157ffaaeb"),
         ],
+    },
+    "com.dynag.music": {
+        "name": "MemoMind Music",
+        "summary": "Now playing on MemoMind glasses",
+        "license": "Proprietary",
+        "categories": ["Multimedia"],
+        "sourceCode": "https://github.com/hemge-dynag/memomind-music",
+        "icon": "com.dynag.music.48.png",
+        "fr": (
+            "Musique en cours sur les lunettes MemoMind",
+            "Compagnon musical natif : titre, artiste, pochette et barre de progression "
+            "de la musique diffusee sur le telephone, affiches sur les lunettes MemoMind. "
+            "Bouton des lunettes : lecture/pause.",
+        ),
+        "apks": [
+            ("1.0.0", 1, "memomind-music-1.0.0.apk", 26, 34,
+             "f08b0a25bf0d06ee17b7bd39d03349aa531d6ae49fa61bac6a63b99157ffaaeb"),
+        ],
     }
 }
 
