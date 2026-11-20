@@ -1,6 +1,6 @@
 # Dépôt F-Droid MemoMind
 
-Dépôt F-Droid secondaire pour les APK natifs MemoMind (ex. MemoMind Cardio).
+Dépôt F-Droid secondaire pour les APK natifs MemoMind (Cardio, MemoOnly).
 
 ## Ajouter le dépôt dans F-Droid
 
@@ -23,7 +23,7 @@ Empreinte de signature du dépôt (SHA-256) :
 ## Applications
 
 - **MemoMind Cardio** (`com.dynag.cardio`) — Cardio BPM sur les lunettes MemoMind.
-- **MemoMind Music** (`com.dynag.music`) — Musique en cours (titre, artiste, pochette, progression) sur les lunettes MemoMind.
+- **MemoOnly** (`com.dynag.memoonly`) — App unique en deux onglets : Cardio (BPM, temps, vitesse, distance) et Musique (titre, artiste, pochette, progression) sur les lunettes MemoMind.
 
 ## Détails techniques
 

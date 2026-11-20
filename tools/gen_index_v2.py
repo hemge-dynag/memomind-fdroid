@@ -34,21 +34,22 @@ APPS = {
              "f08b0a25bf0d06ee17b7bd39d03349aa531d6ae49fa61bac6a63b99157ffaaeb"),
         ],
     },
-    "com.dynag.music": {
-        "name": "MemoMind Music",
-        "summary": "Now playing on MemoMind glasses",
+    "com.dynag.memoonly": {
+        "name": "MemoOnly",
+        "summary": "Cardio + music on MemoMind glasses",
         "license": "Proprietary",
-        "categories": ["Multimedia"],
-        "sourceCode": "https://github.com/hemge-dynag/memomind-music",
-        "icon": "com.dynag.music.48.png",
+        "categories": ["Health & Fitness", "Multimedia"],
+        "sourceCode": "https://github.com/hemge-dynag/memomind-memoonly",
+        "icon": "com.dynag.memoonly.48.png",
         "fr": (
-            "Musique en cours sur les lunettes MemoMind",
-            "Compagnon musical natif : titre, artiste, pochette et barre de progression "
-            "de la musique diffusee sur le telephone, affiches sur les lunettes MemoMind. "
-            "Bouton des lunettes : lecture/pause.",
+            "Cardio et musique sur les lunettes MemoMind",
+            "Application native unique pour les lunettes MemoMind, en deux onglets : "
+            "Cardio (frequence cardiaque BLE, temps, vitesse et distance) et Musique "
+            "(titre, artiste, pochette et progression de la musique du telephone). "
+            "Bouton des lunettes : lecture/pause en onglet Musique.",
         ),
         "apks": [
-            ("1.0.0", 1, "memomind-music-1.0.0.apk", 26, 34,
+            ("1.0.0", 1, "memoonly-1.0.0.apk", 26, 34,
              "f08b0a25bf0d06ee17b7bd39d03349aa531d6ae49fa61bac6a63b99157ffaaeb"),
         ],
     }
@@ -113,8 +114,8 @@ def main(repo: pathlib.Path) -> int:
         "repo": {
             "name": {"en": "MemoMind", "fr": "MemoMind"},
             "description": {
-                "en": "MemoMind F-Droid repository (native APKs, e.g. Cardio).",
-                "fr": "Depot F-Droid MemoMind (apps APK natives, ex. Cardio).",
+                "en": "MemoMind F-Droid repository (native APKs: Cardio, MemoOnly).",
+                "fr": "Depot F-Droid MemoMind (apps APK natives : Cardio, MemoOnly).",
             },
             "address": REPO_ADDRESS,
             "timestamp": ts,
