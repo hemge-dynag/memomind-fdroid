@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Genere un index-v1.jar signe (format jarsigner/F-Droid) sans JDK.
+"""Genere un jar signe (format jarsigner/F-Droid) sans JDK.
 
-Usage: sign_index.py <repo_dir> <keystore.jks> <storepass> [alias]
+Usage: sign_index.py <repo_dir> <keystore.jks> <storepass> [json_name] [jar_name] [alias]
 
-Ecrit repo_dir/index-v1.jar a partir de repo_dir/index-v1.json.
+Ecrit repo_dir/<jar_name> a partir de repo_dir/<json_name>.
+Par defaut: json_name=index-v1.json, jar_name=index-v1.jar.
 Le bloc PKCS#7 est construit a la main avec `cryptography` (RSA/SHA-256).
 """
 import base64
@@ -12,7 +13,7 @@ import pathlib
 import sys
 import zipfile
 
-from cryptography.hazmat.primitives import hashes, serialization
+from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.primitives.serialization import pkcs12
 from cryptography.hazmat.primitives.serialization import Encoding
@@ -46,7 +47,6 @@ def build_sf(entries):
 
 
 def _der_elem(buf: bytes, off: int):
-    """Retourne (tag, header_len, body_len, total_len) pour l'element DER a `off`."""
     tag = buf[off]
     n = buf[off + 1]
     if n < 0x80:
@@ -57,7 +57,6 @@ def _der_elem(buf: bytes, off: int):
 
 
 def cert_name_serial(cert_der: bytes):
-    """Retourne (name_der, serial_der) d'un certificat X.509 DER."""
     _tag, hdr, _body, total = _der_elem(cert_der, 0)
     p = hdr
     _tag, hdr, _body, total = _der_elem(cert_der, p)      # TBSCertificate
@@ -105,9 +104,10 @@ def build_pkcs7(sf: bytes, key, cert_der: bytes, cert_pem: bytes) -> bytes:
     return der(0x30, oid_signed + der(0xA0, signed_data))
 
 
-
-def main(repo: pathlib.Path, ks_path: pathlib.Path, storepass: str, alias: str = None) -> int:
-    index = repo / "index-v1.json"
+def main(repo: pathlib.Path, ks_path: pathlib.Path, storepass: str,
+         json_name: str = "index-v1.json", jar_name: str = "index-v1.jar",
+         alias: str = None) -> int:
+    index = repo / json_name
     if not index.is_file():
         print(f"{index} introuvable", file=sys.stderr)
         return 2
@@ -122,7 +122,7 @@ def main(repo: pathlib.Path, ks_path: pathlib.Path, storepass: str, alias: str =
     cert_der = cert.public_bytes(Encoding.DER)
     p7 = build_pkcs7(sf, key, cert_der, cert.public_bytes(Encoding.PEM))
 
-    out = repo / "index-v1.jar"
+    out = repo / jar_name
     z = zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED)
     z.writestr("META-INF/MANIFEST.MF", mf)
     z.writestr("META-INF/FDROID.SF", sf)
@@ -139,5 +139,8 @@ if __name__ == "__main__":
         sys.exit(2)
     repo = pathlib.Path(sys.argv[1])
     ks = pathlib.Path(sys.argv[2])
-    alias = sys.argv[4] if len(sys.argv) > 4 else None
-    sys.exit(main(repo, ks, sys.argv[3], alias))
+    storepass = sys.argv[3]
+    json_name = sys.argv[4] if len(sys.argv) > 4 else "index-v1.json"
+    jar_name = sys.argv[5] if len(sys.argv) > 5 else "index-v1.jar"
+    alias = sys.argv[6] if len(sys.argv) > 6 else None
+    sys.exit(main(repo, ks, storepass, json_name, jar_name, alias))
