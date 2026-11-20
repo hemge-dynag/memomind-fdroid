@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MemoMind — dépôt F-Droid</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #f6f7f9; color: #16181d; padding: 24px;
+  }
+  main { max-width: 520px; width: 100%; background: #fff; border-radius: 16px;
+         box-shadow: 0 4px 24px rgba(0,0,0,.08); padding: 28px; }
+  h1 { font-size: 1.35rem; margin: 0 0 4px; }
+  p.lead { margin: 0 0 20px; color: #5b6270; font-size: .95rem; }
+  .qr { display: flex; justify-content: center; margin: 8px 0 20px; }
+  .qr img { width: 260px; height: 260px; display: block; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .85rem; }
+  .url { background: #f0f2f5; border: 1px solid #e1e4e9; border-radius: 8px;
+         padding: 10px 12px; word-break: break-all; margin-bottom: 18px; }
+  .fp { font-size: .72rem; color: #6a7180; word-break: break-all; margin-bottom: 18px; }
+  ol { padding-left: 20px; margin: 0; font-size: .95rem; line-height: 1.55; }
+  ol li { margin-bottom: 6px; }
+  a.button { display: inline-block; margin-top: 16px; background: #1976d2; color: #fff;
+             text-decoration: none; padding: 10px 16px; border-radius: 8px; font-size: .95rem; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #111318; color: #e8eaed; }
+    main { background: #1b1e24; box-shadow: none; border: 1px solid #2a2e37; }
+    p.lead, .fp { color: #9aa1ad; }
+    .url { background: #22262e; border-color: #2f343d; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Dépôt F-Droid MemoMind</h1>
+  <p class="lead">Scannez le QR code avec F-Droid pour ajouter le dépôt, ou copiez l'adresse ci-dessous.</p>
+
+  <div class="qr">
+    <img src="qr-repo.png" alt="QR code du dépôt F-Droid MemoMind" width="260" height="260">
+  </div>
+
+  <div class="url"><code>https://hemge-dynag.github.io/memomind-fdroid/repo</code></div>
+  <div class="fp">Empreinte de la clé du dépôt (SHA-256)<br><code>0E:7A:8A:A3:6F:33:07:95:8F:91:80:2E:9C:BA:27:90:60:8B:EE:2D:83:A2:E5:CF:01:55:C9:03:7A:67:9E:5F</code></div>
+
+  <ol>
+    <li>Ouvrir F-Droid → <strong>Paramètres</strong> → <strong>Dépôts</strong>.</li>
+    <li>Toucher <strong>+</strong> puis scanner le QR code (ou coller l'adresse).</li>
+    <li>Rafraîchir : l'application <strong>MemoMind Cardio</strong> apparaît.</li>
+  </ol>
+
+  <a class="button" href="repo/index-v1.json">Vérifier l'index du dépôt</a>
+</main>
+</body>
+</html>
