@@ -1,10 +1,10 @@
 {
  "repo": {
-  "timestamp": 1795162941481,
+  "timestamp": 1795163605398,
   "version": 1,
   "name": "MemoMind",
   "icon": "com.dynag.cardio.48.png",
-  "address": "https://hemge-dynag.github.io/memomind-fdroid",
+  "address": "https://hemge-dynag.github.io/memomind-fdroid/repo",
   "mirrors": [],
   "description": "Depot F-Droid MemoMind (apps APK natives, ex. Cardio)."
  },

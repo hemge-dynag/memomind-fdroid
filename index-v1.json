@@ -1,0 +1,58 @@
+{
+ "repo": {
+  "timestamp": 1795163605398,
+  "version": 1,
+  "name": "MemoMind",
+  "icon": "com.dynag.cardio.48.png",
+  "address": "https://hemge-dynag.github.io/memomind-fdroid/repo",
+  "mirrors": [],
+  "description": "Depot F-Droid MemoMind (apps APK natives, ex. Cardio)."
+ },
+ "requests": {
+  "install": [],
+  "uninstall": []
+ },
+ "apps": [
+  {
+   "packageName": "com.dynag.cardio",
+   "icon": "com.dynag.cardio.48.png",
+   "license": "Proprietary",
+   "categories": [
+    "Health & Fitness"
+   ],
+   "sourceCode": "https://github.com/hemge-dynag/memomind-cardio",
+   "suggestedVersionCode": "20",
+   "suggestedVersionName": "1.2.17",
+   "localized": {
+    "en": {
+     "name": "MemoMind Cardio",
+     "summary": "Cardio BPM on MemoMind glasses"
+    },
+    "fr": {
+     "name": "MemoMind Cardio",
+     "summary": "Cardio BPM sur les lunettes MemoMind",
+     "description": "Application cardio native : frequence cardiaque BLE, temps, vitesse et distance sur les lunettes MemoMind. Sports : course, marche, autre sport (BPM + temps seulement)."
+    }
+   },
+   "added": 1795162941481,
+   "lastUpdated": 1795162941481
+  }
+ ],
+ "packages": {
+  "com.dynag.cardio": [
+   {
+    "packageName": "com.dynag.cardio",
+    "versionName": "1.2.17",
+    "versionCode": 20,
+    "apkName": "memomind-cardio-1.2.17.apk",
+    "size": 5047158,
+    "hash": "eb31f5954068169c94dc426f5fd577b67b2fc71f250eced319a606faabe6cf78",
+    "hashType": "sha256",
+    "minSdkVersion": 26,
+    "targetSdkVersion": 34,
+    "nativecode": [],
+    "added": 1795162941481
+   }
+  ]
+ }
+}
