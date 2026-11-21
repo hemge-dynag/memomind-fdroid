@@ -1,6 +1,6 @@
 {
  "repo": {
-  "timestamp": 1795274695505,
+  "timestamp": 1795280505373,
   "version": 1,
   "name": "MemoMind",
   "icon": "com.dynag.cardio.48.png",
@@ -34,8 +34,8 @@
      "description": "Application cardio native : frequence cardiaque BLE, temps, vitesse et distance sur les lunettes MemoMind. Sports : course, marche, autre sport (BPM + temps seulement)."
     }
    },
-   "added": 1795274695505,
-   "lastUpdated": 1795274695505
+   "added": 1795280505373,
+   "lastUpdated": 1795280505373
   },
   {
    "packageName": "com.dynag.memoonly",
@@ -46,8 +46,8 @@
     "Multimedia"
    ],
    "sourceCode": "https://github.com/hemge-dynag/memomind-memoonly",
-   "suggestedVersionCode": "10",
-   "suggestedVersionName": "1.0.9",
+   "suggestedVersionCode": "11",
+   "suggestedVersionName": "1.1.0",
    "localized": {
     "en": {
      "name": "MemOnly",
@@ -59,8 +59,8 @@
      "description": "Application native unique pour les lunettes MemoMind, en trois onglets (Cardio, Config, Musique) avec une connexion unique des lunettes : Cardio (frequence cardiaque BLE, temps, vitesse et distance) et Musique (titre, artiste, pochette et progression de la musique du telephone). Bouton des lunettes : lecture/pause en onglet Musique."
     }
    },
-   "added": 1795274695505,
-   "lastUpdated": 1795274695505
+   "added": 1795280505373,
+   "lastUpdated": 1795280505373
   }
  ],
  "packages": {
@@ -80,6 +80,19 @@
    }
   ],
   "com.dynag.memoonly": [
+   {
+    "packageName": "com.dynag.memoonly",
+    "versionName": "1.1.0",
+    "versionCode": 11,
+    "apkName": "memoonly-1.1.0.apk",
+    "size": 5469507,
+    "hash": "842b5a1bc5ebc68b1f1a378880ba4f39cdd236d2582c34da7188ce6b5a946043",
+    "hashType": "sha256",
+    "minSdkVersion": 26,
+    "targetSdkVersion": 34,
+    "nativecode": [],
+    "added": 1795280505373
+   },
    {
     "packageName": "com.dynag.memoonly",
     "versionName": "1.0.9",
