@@ -35,6 +35,7 @@ APPS = {
                '(titre, artiste, pochette et progression de la musique du telephone). '
                'Bouton des lunettes : lecture/pause en onglet Musique.'),
         'apks': [
+            ('1.0.9', 10, 'memoonly-1.0.9.apk', 26, 34),
             ('1.0.8', 9, 'memoonly-1.0.8.apk', 26, 34),
             ('1.0.7', 8, 'memoonly-1.0.7.apk', 26, 34),
             ('1.0.6', 7, 'memoonly-1.0.6.apk', 26, 34),
