@@ -30,11 +30,12 @@ APPS = {
         'categories': ['Health & Fitness', 'Multimedia'],
         'sourceCode': 'https://github.com/hemge-dynag/memomind-memoonly',
         'fr': ('Cardio et musique sur les lunettes MemoMind',
-               'Application native unique pour les lunettes MemoMind, en deux onglets : '
+               'Application native unique pour les lunettes MemoMind, en trois onglets (Cardio, Config, Musique) avec une connexion unique des lunettes : '
                'Cardio (frequence cardiaque BLE, temps, vitesse et distance) et Musique '
                '(titre, artiste, pochette et progression de la musique du telephone). '
                'Bouton des lunettes : lecture/pause en onglet Musique.'),
         'apks': [
+            ('1.0.8', 9, 'memoonly-1.0.8.apk', 26, 34),
             ('1.0.7', 8, 'memoonly-1.0.7.apk', 26, 34),
             ('1.0.6', 7, 'memoonly-1.0.6.apk', 26, 34),
             ('1.0.5', 6, 'memoonly-1.0.5.apk', 26, 34),
