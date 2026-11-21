@@ -22,7 +22,29 @@ APPS = {
                'distance sur les lunettes MemoMind. Sports : course, marche, autre sport '
                '(BPM + temps seulement).'),
         'apks': [('1.2.17', 20, 'memomind-cardio-1.2.17.apk', 26, 34)],
-    }
+    },
+    'com.dynag.memoonly': {
+        'name': 'MemOnly',
+        'summary': 'Cardio + music on MemoMind glasses',
+        'license': 'Proprietary',
+        'categories': ['Health & Fitness', 'Multimedia'],
+        'sourceCode': 'https://github.com/hemge-dynag/memomind-memoonly',
+        'fr': ('Cardio et musique sur les lunettes MemoMind',
+               'Application native unique pour les lunettes MemoMind, en deux onglets : '
+               'Cardio (frequence cardiaque BLE, temps, vitesse et distance) et Musique '
+               '(titre, artiste, pochette et progression de la musique du telephone). '
+               'Bouton des lunettes : lecture/pause en onglet Musique.'),
+        'apks': [
+            ('1.0.7', 8, 'memoonly-1.0.7.apk', 26, 34),
+            ('1.0.6', 7, 'memoonly-1.0.6.apk', 26, 34),
+            ('1.0.5', 6, 'memoonly-1.0.5.apk', 26, 34),
+            ('1.0.4', 5, 'memoonly-1.0.4.apk', 26, 34),
+            ('1.0.3', 4, 'memoonly-1.0.3.apk', 26, 34),
+            ('1.0.2', 3, 'memoonly-1.0.2.apk', 26, 34),
+            ('1.0.1', 2, 'memoonly-1.0.1.apk', 26, 34),
+            ('1.0.0', 1, 'memoonly-1.0.0.apk', 26, 34),
+        ],
+    },
 }
 
 
@@ -73,8 +95,8 @@ def main(repo: pathlib.Path) -> int:
             'version': 1,
             'name': 'MemoMind',
             'icon': 'com.dynag.cardio.48.png',
-            'address': 'https://hemge-dynag.github.io/fdroid/repo/',
-            'mirrors': ['https://hemge-dynag.github.io/fdroid/fdroid/repo'],
+            'address': 'https://hemge-dynag.github.io/memomind-fdroid/repo',
+            'mirrors': [],
             'description': 'Depot F-Droid MemoMind (apps APK natives, ex. Cardio).',
         },
         'requests': {'install': [], 'uninstall': []},
