@@ -49,6 +49,8 @@ APPS = {
             "Bouton des lunettes : lecture/pause en onglet Musique.",
         ),
         "apks": [
+            ("1.0.7", 8, "memoonly-1.0.7.apk", 26, 34,
+             "f08b0a25bf0d06ee17b7bd39d03349aa531d6ae49fa61bac6a63b99157ffaaeb"),
             ("1.0.6", 7, "memoonly-1.0.6.apk", 26, 34,
              "f08b0a25bf0d06ee17b7bd39d03349aa531d6ae49fa61bac6a63b99157ffaaeb"),
             ("1.0.5", 6, "memoonly-1.0.5.apk", 26, 34,
