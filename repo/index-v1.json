@@ -1,6 +1,6 @@
 {
  "repo": {
-  "timestamp": 1795333961261,
+  "timestamp": 1795360738870,
   "version": 1,
   "name": "MemoMind",
   "icon": "com.dynag.cardio.48.png",
@@ -34,8 +34,8 @@
      "description": "Application cardio native : frequence cardiaque BLE, temps, vitesse et distance sur les lunettes MemoMind. Sports : course, marche, autre sport (BPM + temps seulement)."
     }
    },
-   "added": 1795333961261,
-   "lastUpdated": 1795333961261
+   "added": 1795360738870,
+   "lastUpdated": 1795360738870
   },
   {
    "packageName": "com.dynag.memoonly",
@@ -46,8 +46,8 @@
     "Multimedia"
    ],
    "sourceCode": "https://github.com/hemge-dynag/memomind-memoonly",
-   "suggestedVersionCode": "12",
-   "suggestedVersionName": "1.1.1",
+   "suggestedVersionCode": "13",
+   "suggestedVersionName": "1.2.0",
    "localized": {
     "en": {
      "name": "MemOnly",
@@ -56,11 +56,11 @@
     "fr": {
      "name": "MemOnly",
      "summary": "Cardio et musique sur les lunettes MemoMind",
-     "description": "Application native unique pour les lunettes MemoMind, en trois onglets (Cardio, Config, Musique) avec une connexion unique des lunettes : Cardio (frequence cardiaque BLE, temps, vitesse et distance) et Musique (titre, artiste, pochette et progression de la musique du telephone). Bouton des lunettes : lecture/pause en onglet Musique."
+     "description": "Application native unique pour les lunettes MemoMind, avec un menu refermable qui regroupe les applications (Cardio, Musique) et la configuration sur une connexion unique des lunettes : Cardio (frequence cardiaque BLE, temps, vitesse et distance) et Musique (titre, artiste, pochette et progression de la musique du telephone). Bouton des lunettes : lecture/pause en onglet Musique."
     }
    },
-   "added": 1795333961261,
-   "lastUpdated": 1795333961261
+   "added": 1795360738870,
+   "lastUpdated": 1795360738870
   }
  ],
  "packages": {
@@ -80,6 +80,19 @@
    }
   ],
   "com.dynag.memoonly": [
+   {
+    "packageName": "com.dynag.memoonly",
+    "versionName": "1.2.0",
+    "versionCode": 13,
+    "apkName": "memoonly-1.2.0.apk",
+    "size": 5481683,
+    "hash": "0bf7e00e15018be1c452c675a0fc088350b499341763cddec1c47d2b6decccc7",
+    "hashType": "sha256",
+    "minSdkVersion": 26,
+    "targetSdkVersion": 34,
+    "nativecode": [],
+    "added": 1795360738870
+   },
    {
     "packageName": "com.dynag.memoonly",
     "versionName": "1.1.1",

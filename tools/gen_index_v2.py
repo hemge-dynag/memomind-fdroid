@@ -43,12 +43,14 @@ APPS = {
         "icon": "com.dynag.memoonly.48.png",
         "fr": (
             "Cardio et musique sur les lunettes MemoMind",
-            "Application native unique pour les lunettes MemoMind, en trois onglets (Cardio, Config, Musique) avec une connexion unique des lunettes : "
+            "Application native unique pour les lunettes MemoMind, avec un menu refermable qui regroupe les applications (Cardio, Musique) et la configuration sur une connexion unique des lunettes : "
             "Cardio (frequence cardiaque BLE, temps, vitesse et distance) et Musique "
             "(titre, artiste, pochette et progression de la musique du telephone). "
             "Bouton des lunettes : lecture/pause en onglet Musique.",
         ),
         "apks": [
+            ("1.2.0", 13, "memoonly-1.2.0.apk", 26, 34,
+             "f08b0a25bf0d06ee17b7bd39d03349aa531d6ae49fa61bac6a63b99157ffaaeb"),
             ("1.1.1", 12, "memoonly-1.1.1.apk", 26, 34,
              "f08b0a25bf0d06ee17b7bd39d03349aa531d6ae49fa61bac6a63b99157ffaaeb"),
             ("1.1.0", 11, "memoonly-1.1.0.apk", 26, 34,
