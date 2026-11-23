@@ -1,6 +1,6 @@
 {
  "repo": {
-  "timestamp": 1795425222777,
+  "timestamp": 1795427050989,
   "version": 1,
   "name": "MemoMind",
   "icon": "com.dynag.cardio.48.png",
@@ -34,8 +34,8 @@
      "description": "Application cardio native : frequence cardiaque BLE, temps, vitesse et distance sur les lunettes MemoMind. Sports : course, marche, autre sport (BPM + temps seulement)."
     }
    },
-   "added": 1795425222777,
-   "lastUpdated": 1795425222777
+   "added": 1795427050989,
+   "lastUpdated": 1795427050989
   },
   {
    "packageName": "com.dynag.memoonly",
@@ -46,8 +46,8 @@
     "Multimedia"
    ],
    "sourceCode": "https://github.com/hemge-dynag/memomind-memoonly",
-   "suggestedVersionCode": "15",
-   "suggestedVersionName": "1.4.0",
+   "suggestedVersionCode": "16",
+   "suggestedVersionName": "1.5.0",
    "localized": {
     "en": {
      "name": "MemOnly",
@@ -59,8 +59,8 @@
      "description": "Application native unique pour les lunettes MemoMind, avec un menu refermable qui regroupe les applications (Cardio, Musique) et la configuration sur une connexion unique des lunettes : Cardio (frequence cardiaque BLE, temps, vitesse et distance) et Musique (titre, artiste, pochette et progression de la musique du telephone). Bouton des lunettes : lecture/pause en onglet Musique."
     }
    },
-   "added": 1795425222777,
-   "lastUpdated": 1795425222777
+   "added": 1795427050989,
+   "lastUpdated": 1795427050989
   }
  ],
  "packages": {
@@ -76,10 +76,23 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425221769
+    "added": 1795427043961
    }
   ],
   "com.dynag.memoonly": [
+   {
+    "packageName": "com.dynag.memoonly",
+    "versionName": "1.5.0",
+    "versionCode": 16,
+    "apkName": "memoonly-1.5.0.apk",
+    "size": 5481683,
+    "hash": "bf28c1c12479bc111616f12a0292d36be8ac32c1e6128ecb4ab2b07b99d96b69",
+    "hashType": "sha256",
+    "minSdkVersion": 26,
+    "targetSdkVersion": 34,
+    "nativecode": [],
+    "added": 1795427050989
+   },
    {
     "packageName": "com.dynag.memoonly",
     "versionName": "1.4.0",
@@ -91,7 +104,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425222777
+    "added": 1795427044685
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -104,7 +117,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425222581
+    "added": 1795427044665
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -117,7 +130,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425222501
+    "added": 1795427044581
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -130,7 +143,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425222469
+    "added": 1795427044561
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -143,7 +156,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425222389
+    "added": 1795427044481
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -156,7 +169,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425222357
+    "added": 1795427044461
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -169,7 +182,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425222281
+    "added": 1795427044393
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -182,7 +195,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425222201
+    "added": 1795427044357
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -195,7 +208,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425222173
+    "added": 1795427044281
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -208,7 +221,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425222093
+    "added": 1795427044261
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -221,7 +234,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425222069
+    "added": 1795427044177
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -234,7 +247,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425221989
+    "added": 1795427044153
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -247,7 +260,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425221977
+    "added": 1795427044085
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -260,7 +273,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425221889
+    "added": 1795427044061
    },
    {
     "packageName": "com.dynag.memoonly",
@@ -273,7 +286,7 @@
     "minSdkVersion": 26,
     "targetSdkVersion": 34,
     "nativecode": [],
-    "added": 1795425221797
+    "added": 1795427043981
    }
   ]
  }
